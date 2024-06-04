@@ -1,0 +1,1 @@
+Systemka ayaan wx ku daray
