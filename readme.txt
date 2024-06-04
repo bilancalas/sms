@@ -1,1 +1,1 @@
-Systemka ayaan wx ku daray
+Systemka ayaan wx ku daray tijaabo
