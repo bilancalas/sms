@@ -7,7 +7,7 @@
                 <!-- <img src="img/avatar3.png" class="img-circle" alt="User Image" /> -->
             </div>
             <div class="pull-left info">
-                <p>Hello, <?php echo $_SESSION['userID']; ?> </p>
+                <p>Hello, <?php echo $_SESSION['SID']; ?> </p>
 
                 <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
             </div>
@@ -56,7 +56,7 @@
             </li>
             <li class="treeview">
                 <a href="#">
-                    <i class="fa fa-users"></i> <span>Students</span>
+                    <i class="fa fa-users"></i> <span>users</span>
                     <i class="fa fa-angle-left pull-right"></i>
                 </a>
                 <ul class="treeview-menu">
@@ -66,12 +66,13 @@
             </li>
             <li class="treeview">
                 <a href="#">
-                    <i class="fa fa-group"></i> <span>Users</span>
+                    <i class="fa fa-group"></i> <span>Students</span>
                     <i class="fa fa-angle-left pull-right"></i>
                 </a>
                 <ul class="treeview-menu">
-                    <li><a href="newuser.php"><i class="fa fa-angle-double-right"></i> New Users</a></li>
-                    <li><a href="manageusers.php"><i class="fa fa-angle-double-right"></i> Manage users</a></li>
+                    <li><a href="newStudent.php">
+                        <i class="fa fa-angle-double-right"></i> New Students </a></li>
+                    <li><a href="manageStudent.php"><i class="fa fa-angle-double-right"></i> Manage Students</a></li>
                 </ul>
             </li>
 

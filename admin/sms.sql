@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 19, 2024 at 04:04 PM
+-- Generation Time: May 31, 2024 at 05:04 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.0.30
 
@@ -20,6 +20,33 @@ SET time_zone = "+00:00";
 --
 -- Database: `sms`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `students`
+--
+
+CREATE TABLE `students` (
+  `id` int(10) NOT NULL,
+  `name` varchar(20) NOT NULL,
+  `gender` varchar(6) NOT NULL,
+  `class` varchar(8) NOT NULL,
+  `phone` int(20) NOT NULL,
+  `parent` varchar(15) NOT NULL,
+  `number` int(20) NOT NULL,
+  `city` varchar(20) NOT NULL,
+  `address` varchar(15) NOT NULL,
+  `age` int(8) NOT NULL,
+  `role` varchar(20) DEFAULT 'user'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `students`
+--
+
+INSERT INTO `students` (`id`, `name`, `gender`, `class`, `phone`, `parent`, `number`, `city`, `address`, `age`, `role`) VALUES
+(1, 'ali', 'male', '12', 615567876, 'caasho', 618765645, 'dhuusamareeb', 'dayax', 24, 'user');
 
 -- --------------------------------------------------------
 
@@ -51,6 +78,13 @@ INSERT INTO `users` (`id`, `name`, `email`, `password`, `status`) VALUES
 --
 
 --
+-- Indexes for table `students`
+--
+ALTER TABLE `students`
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `id` (`id`);
+
+--
 -- Indexes for table `users`
 --
 ALTER TABLE `users`
@@ -59,6 +93,12 @@ ALTER TABLE `users`
 --
 -- AUTO_INCREMENT for dumped tables
 --
+
+--
+-- AUTO_INCREMENT for table `students`
+--
+ALTER TABLE `students`
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `users`

@@ -9,7 +9,7 @@ if (isset($_POST['loginBtn'])) {
     $q = mysqli_query($conn, $sql);
     if ($q->num_rows > 0) {
         $row = mysqli_fetch_assoc($q);
-        $_SESSION['userID'] = $row['name'];
+        $_SESSION['SID'] = $row['name'];
 
         header('location: admin/dashboard.php');
     } else {
