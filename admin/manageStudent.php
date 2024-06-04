@@ -32,7 +32,7 @@ if (!$_SESSION['SID']) {
 
                         <div class="box">
                             <div class="box-header">
-                                <h3 class="box-title">Users List</h3>
+                                <h3 class="box-title">student List</h3>
                             </div><!-- /.box-header -->
                             <div class="box-body table-responsive">
                                 <table id="example1" class="table table-bordered table-striped">
@@ -40,9 +40,18 @@ if (!$_SESSION['SID']) {
                                         <tr>
                                             <th>#</th>
                                             <th>Name</th>
-                                            <th>Email</th>
+                                           
+                                            <th>Gender</th>
+                                            <th>Class</th>
+                                            <th>Phone</th>
+                                            <th>parent</th>
+                                            <th>Number</th>
+                                            <th>City</th>
+                                            <th>Address</th>
+                                            <th>Age</th>
                                             <th>Role</th>
                                             <th>Actions</th>
+
                                         </tr>
                                     <tbody>
 
@@ -50,7 +59,7 @@ if (!$_SESSION['SID']) {
                                         <?php
 
                                         include 'includes/connect.php';
-                                        $sql = "SELECT * FROM users";
+                                        $sql = "SELECT * FROM students";
                                         $r = mysqli_query($conn, $sql);
 
                                         while ($row = mysqli_fetch_assoc($r)) {
@@ -60,7 +69,14 @@ if (!$_SESSION['SID']) {
                                             <tr>
                                                 <td><?php echo $row['id']; ?></td>
                                                 <td><?php echo $row['name']; ?></td>
-                                                <td><?php echo $row['email']; ?></td>
+                                                <td><?php echo $row['class']; ?></td>
+                                                <td><?php echo $row['gender']; ?></td>
+                                                <td><?php echo $row['phone']; ?></td>
+                                                <td><?php echo $row['parent']; ?></td>
+                                                <td><?php echo $row['number']; ?></td>
+                                                <td><?php echo $row['city']; ?></td>
+                                                <td><?php echo $row['address']; ?></td>
+                                                <td><?php echo $row['age']; ?></td>
                                                 <td><?php echo $row['role']; ?></td>
 
                                                 <td>actions</td>
