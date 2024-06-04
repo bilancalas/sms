@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (!$_SESSION['SID']) {
-    header('location: ../');
+    header('location: ../login.php');
 }
 ?>
 <!DOCTYPE html>
@@ -47,7 +47,7 @@ if (!$_SESSION['SID']) {
                                     0
                                 </h3>
                                 <p>
-                                 Total students
+                                    Total students
                                 </p>
                             </div>
                             <div class="icon">
@@ -66,7 +66,7 @@ if (!$_SESSION['SID']) {
                                     0
                                 </h3>
                                 <p>
-                                   Total teachers
+                                    Total teachers
                                 </p>
                             </div>
                             <div class="icon">
