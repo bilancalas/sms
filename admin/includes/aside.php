@@ -89,12 +89,12 @@
 
             <li class="treeview">
                 <a href="#">
-                    <i class="fa fa-home"></i> <span>Dormitories</span>
+                    <i class="fa fa-users"></i> <span>teachers</span>
                     <i class="fa fa-angle-left pull-right"></i>
                 </a>
                 <ul class="treeview-menu">
-                    <li><a href="newuser.php"><i class="fa fa-angle-double-right"></i> New Users</a></li>
-                    <li><a href="manageusers.php"><i class="fa fa-angle-double-right"></i> Manage users</a></li>
+                    <li><a href="fromteachers.php"><i class="fa fa-angle-double-right"></i>register teachers</a></li>
+                    <li><a href="manageusers.php"><i class="fa fa-angle-double-right"></i> Manage teachers </a></li>
                 </ul>
             </li>
 
