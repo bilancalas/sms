@@ -16,6 +16,6 @@ if (isset($_POST['btnSave'])) {
     $q = mysqli_query($conn, $sql);
     if ($q) {
 
-        echo "<script>alert('successfully saved'); location='../manageStudent.php';</script>";
+        echo "<script>alert('successfully saved'); location='../managestudents.php';</script>";
     }
 }

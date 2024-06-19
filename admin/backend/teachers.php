@@ -9,11 +9,11 @@ if (isset($_POST['btnSave'])) {
     $gender = $_POST['gender'];
     $department = $_POST['department'];
     $salary = $_POST['salary'];
-    $date = $_POST['date']
-    $sql = "INSERT INTO teachers(name,email,phone,address,dob,gender,department,salary,date) VALUES('$name','$email','$phone','$address','$dob','$gender','$department','$salary','$date')";
+    $date = $_POST['date'];
+    $sql ="INSERT INTO teachers (name,email,phone,address,dob,gender,department,salary,date) VALUES('$name','$email','$phone','$address','$dob','$gender','$department','$salary','$date')";
     $q = mysqli_query($conn, $sql);
     if ($q) {
 
-        echo "<script>alert('successfully saved'); location='../manageStudent.php';</script>";
+        echo "<script>alert('successfully saved'); location='../manageteachers.php';</script>";
     }
 }
