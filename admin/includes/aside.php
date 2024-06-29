@@ -94,7 +94,7 @@
                 </a>
                 <ul class="treeview-menu">
                     <li><a href="fromteachers.php"><i class="fa fa-angle-double-right"></i>register teachers</a></li>
-                    <li><a href="manageusers.php"><i class="fa fa-angle-double-right"></i> Manage teachers </a></li>
+                    <li><a href="manageteachers.php"><i class="fa fa-angle-double-right"></i> Manage teachers </a></li>
                 </ul>
             </li>
 
