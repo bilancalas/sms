@@ -1,6 +1,6 @@
 <?php
 session_start();
-if (!$_SESSION['SID']) {
+if (!$_SESSION['TID']) {
     header('location: ../login.php');
 }
 ?>
@@ -60,6 +60,10 @@ if (!$_SESSION['SID']) {
                                     <label for="exampleInputPassword1">dob</label>
                                     <input type="date" name="dob" class="form-control" placeholder="inter dob">
                                 </div>
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1">Gender</label>
+                                    <input type="gender" name="gender" class="form-control" placeholder="inter gender">
+                                </div>
 
                                 <div class="form-group">
                                     <label for="exampleInputPassword1">department</label>
@@ -91,7 +95,7 @@ if (!$_SESSION['SID']) {
             </section><!-- /.content -->
         </aside>
     </div>
-    <!-- Welcome To dashboard: mr. <?php echo $_SESSION['SID']; ?> <a href="includes/logout.php">Logout</a> -->
+    <!-- Welcome To dashboard: mr. <?php echo $_SESSION['TID']; ?> <a href="includes/logout.php">Logout</a> -->
 
 </body>
 

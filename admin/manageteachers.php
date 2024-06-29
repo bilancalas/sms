@@ -75,10 +75,24 @@ if (!$_SESSION['SID']) {
                                                 <td><?php echo $row['department']; ?></td>
                                                 <td><?php echo $row['salary']; ?></td>
                                                 <td><?php echo $row['date']; ?></td>
-                                                <td>actions</td>
+                                               
 
-                                            </tr>
-                                        <?php     }
+                                            
+       <td>
+
+    <a href="editTeachers.php?Sid=<?php echo $row['id']; ?>">
+
+        <button class="btn btn-info fa fa- edit">Edit</button>
+
+    </a>
+    <a href="backend/teachers.php?Sid=<?php echo $row['id']; ?>" onclick="return confirm('Are you sure?');">
+        <button class="btn btn-danger fa fa-trash-o"></button>
+    </a>
+<?php
+} ?>
+</td>
+</tr>
+                                        <?php     
                                         ?>
                                     </tbody>
                                 </table>
