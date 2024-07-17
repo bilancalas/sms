@@ -60,8 +60,8 @@
                     <i class="fa fa-angle-left pull-right"></i>
                 </a>
                 <ul class="treeview-menu">
-                    <li><a href="pages/tables/simple.html"><i class="fa fa-angle-double-right"></i> New account</a></li>
-                    <li><a href="pages/tables/data.html"><i class="fa fa-angle-double-right"></i> Manage Accounts</a></li>
+                    <li><a href="Newusers.php"><i class="fa fa-angle-double-right"></i> New users</a></li>
+                    <li><a href="manageusers.php"><i class="fa fa-angle-double-right"></i> Manage Users</a></li>
                 </ul>
             </li>
             <li class="treeview">
@@ -89,11 +89,11 @@
 
             <li class="treeview">
                 <a href="#">
-                    <i class="fa fa-users"></i> <span>teachers</span>
+                    <i class="fa fa-users"></i> <span>Teachers</span>
                     <i class="fa fa-angle-left pull-right"></i>
                 </a>
                 <ul class="treeview-menu">
-                    <li><a href="fromteachers.php"><i class="fa fa-angle-double-right"></i>register teachers</a></li>
+                    <li><a href="fromteachers.php"><i class="fa fa-angle-double-right"></i>Register Teachers</a></li>
                     <li><a href="manageteachers.php"><i class="fa fa-angle-double-right"></i> Manage teachers </a></li>
                 </ul>
             </li>

@@ -10,7 +10,7 @@ if (!$_SESSION['SID']) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>school management system  New Students</title>
+    <title>school management system  Edit Students</title>
 
 </head>
 

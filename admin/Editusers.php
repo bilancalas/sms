@@ -33,15 +33,15 @@ if (!$_SESSION['SID']) {
                 <div class="card">
                     <div class="box box-primary">
                         <div class="box-header">
-                            <h3 class="box-title"> Edit Teachers Form</h3>
+                            <h3 class="box-title"> Edit Users Form</h3>
                         </div><!-- /.box-header -->
                         <!-- form start -->
-                        <form role="form" action="backend/teachers.php" method="post">
+                        <form role="form" action="backend/users.php" method="post">
                             <div class="box-body">
                             <?php
                                  include 'includes/connect.php';
-                                 $id = $_GET['Sid'];
-                                 $sql="SELECT * FROM teachers WHERE id ='$id' ";
+                                 $id = $_GET['Uid'];
+                                 $sql="SELECT * FROM users WHERE id ='$id' ";
                                  $q=mysqli_query($conn, $sql);
                                  if($q-> num_rows > 0){
                                  $row=mysqli_fetch_assoc($q);
@@ -59,30 +59,17 @@ if (!$_SESSION['SID']) {
                                      <input type="email" name="email" class="form-control" placeholder="Enter email" value="<?php echo $row['email'];?>">
                                 </div>
                                 <div class="form-group">
-                                    <label for="exampleInputEmail1">phone</label>
-                                    <input type="int" name="phone" class="form-control" placeholder="Enter gender" value="<?php echo $row['phone'];?>">
+                                    <label for="exampleInputEmail1">Paasword</label>
+                                    <input type="password" name="password" class="form-control" placeholder="Enter password" value="<?php echo $row['password'];?>">
                                 </div>
+                                
                                 <div class="form-group">
-                                    <label for="exampleInputPassword1">Address</label>
-                                    <input type="text" name="address" class="form-control" placeholder="inter address" value="<?php echo $row['address'];?>">
-                                </div>
-                                <div class="form-group">
-                                    <label for="exampleInputPassword1">Dob</label>
-                                    <input type="date" name="dob" class="form-control" placeholder="inter number" value="<?php echo $row['dob'];?>">
-                                </div>
-                                <div class="form-group">
-                                    <label for="exampleInputPassword1">Gender</label>
-                                    <input type="gender" name="gender" class="form-control" placeholder="inter gender">
-                                </div>
-
-                                <div class="form-group">
-                                    <label for="exampleInputPassword1">Department</label>
-                                    <input type="text" name="department" class="form-control" placeholder="inter department" value="<?php echo $row['department'];?>">
-                                </div>
-
-                                <div class="form-group">
-                                    <label for="exampleInputPassword1">Salary</label>
-                                    <input type="text" name="salary" class="form-control" placeholder="inter salary" value="<?php echo $row['salary'];?>">>
+                                    <label for="exampleInputPassword1">Role</label>
+                                    <select class="form-control" name="role" value="<?php echo $row['role'];?> ">
+                                        <option>--Select user role</option>
+                                        <option>Administrator</option>
+                                        <option>User</option>
+                                    </select>
                                 </div>
 
                                 <div class="form-group">

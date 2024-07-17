@@ -10,7 +10,7 @@ if (!$_SESSION['SID']) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>school management system  New teachers</title>
+    <title>school management system  New Users</title>
 
 </head>
 
@@ -33,10 +33,10 @@ if (!$_SESSION['SID']) {
                 <div class="card">
                     <div class="box box-primary">
                         <div class="box-header">
-                            <h3 class="box-title">teachers Registration Form</h3>
+                            <h3 class="box-title">Users Registration Form</h3>
                         </div><!-- /.box-header -->
                         <!-- form start -->
-                        <form role="form" action="backend/teachers.php" method="post">
+                        <form role="form" action="backend/users.php" method="post">
                             <div class="box-body">
                                 <div class="form-group">
                                     <label for="exampleInputEmail1">Full name</label>
@@ -44,35 +44,24 @@ if (!$_SESSION['SID']) {
                                 </div>
                                 
                                 <div class="form-group">
-                                    <label for="exampleInputEmail1">email</label>
+                                    <label for="exampleInputEmail1">Email</label>
                                     <input type="email" name="email" class="form-control" placeholder="Enter email">
                                 </div>
                                 <div class="form-group">
-                                    <label for="exampleInputPassword1">phone</label>
-                                    <input type="int" name="phone" class="form-control" placeholder="inter number">
+                                    <label for="exampleInputPassword1">Password</label>
+                                    <input type="password" name="phone" class="form-control" placeholder="inter password">
                                 </div>
                                 <div class="form-group">
-                                    <label for="exampleInputPassword1">address</label>
-                                    <input type="text" name="address" class="form-control" placeholder="inter address">
-                                </div>
-
-                                <div class="form-group">
-                                    <label for="exampleInputPassword1">dob</label>
-                                    <input type="date" name="dob" class="form-control" placeholder="inter dob">
+                                    <label for="exampleInputPassword1">Status</label>
+                                    <input type="text" name="address" class="form-control" placeholder="inter status">
                                 </div>
                                 <div class="form-group">
-                                    <label for="exampleInputPassword1">Gender</label>
-                                    <input type="gender" name="gender" class="form-control" placeholder="inter gender">
-                                </div>
-
-                                <div class="form-group">
-                                    <label for="exampleInputPassword1">department</label>
-                                    <input type="text" name="department" class="form-control" placeholder="inter department">
-                                </div>
-
-                                <div class="form-group">
-                                    <label for="exampleInputPassword1">salary</label>
-                                    <input type="int" name="salary" class="form-control" placeholder="inter salary">
+                                    <label for="exampleInputPassword1">Role</label>
+                                    <select class="form-control" name="role">
+                                        <option>--Select user role</option>
+                                        <option>Administrator</option>
+                                        <option>User</option>
+                                    </select>
                                 </div>
                                 <div class="form-group">
                                     <label for="exampleInputPassword1">date</label>

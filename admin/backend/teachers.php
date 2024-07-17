@@ -39,13 +39,14 @@ if (isset($_POST['btnUpdate'])) {
     $department = $_POST['department'];
     $salary = $_POST['salary'];
     $date = $_POST['date'];
-$sql = "UPDATE teachers SET name='$name', email=$email', phone='$phone',address='$address',dob='$dob',
- gender='$gender',department='$department',salary='$salary',,date='$date',  where id='$id'";
+    $id= $_POST['ID'];
+$sql = "UPDATE teachers SET name='$name', email='$email', phone='$phone',address='$address',dob='$dob',
+ gender='$gender',department='$department',salary='$salary',date='$date'  where id='$id'";
 
 $q = mysqli_query($conn, $sql);
 if ($q) {
     echo "<script>alert('successfully Updated'); location='../manageteachers.php';</script>";
 } else {
-    echo "error";
+    echo "error".mysqli_error($conn);
 }
 }
