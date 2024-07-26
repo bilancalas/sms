@@ -56,7 +56,21 @@ if (!$_SESSION['SID']) {
                                 </div>
                                 <div class="form-group">
                                     <label for="exampleInputPassword1">class</label>
-                                    <input type="text" name="class" class="form-control" placeholder="inter class">
+                                    <select class="form-control" name="role">
+                                        <option>--Select class</option>
+                                        <option>class 12</option>
+                                        <option>class 11</option>
+                                        <option>class 10</option>
+                                        <option>class 9</option>
+                                        <option>class 8</option>
+                                        <option>class 7</option>
+                                        <option>class 6</option>
+                                        <option>class 5</option>
+                                        <option>class 4</option>
+                                        <option>class 3</option>
+                                        <option>class 2</option>
+                                        <option>class 1</option>
+                                    </select>
                                 </div>
                                 <div class="form-group">
                                     <label for="exampleInputPassword1">phone</label>

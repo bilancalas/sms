@@ -25,7 +25,7 @@
         <!-- sidebar menu: : style can be found in sidebar.less -->
         <ul class="sidebar-menu">
             <li class="active">
-                <a href="index.html">
+                <a href="dashboard.php">
                     <i class="fa fa-dashboard"></i> <span>Dashboard</span>
                 </a>
             </li>
@@ -100,12 +100,12 @@
 
             <li class="treeview">
                 <a href="#">
-                    <i class="fa fa-bars"></i> <span>Sections</span>
+                    <i class="fa fa-bars"></i> <span>Parents</span>
                     <i class="fa fa-angle-left pull-right"></i>
                 </a>
                 <ul class="treeview-menu">
-                    <li><a href="newuser.php"><i class="fa fa-angle-double-right"></i> New Users</a></li>
-                    <li><a href="manageusers.php"><i class="fa fa-angle-double-right"></i> Manage users</a></li>
+                    <li><a href="AddParents.php"><i class="fa fa-angle-double-right"></i> Add Parents</a></li>
+                    <li><a href="viewParents.php"><i class="fa fa-angle-double-right"></i> View Parents</a></li>
                 </ul>
             </li>
 
